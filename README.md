@@ -1,3 +1,5 @@
+[![Clubhouse CSV Upload status](https://github.com/IonutBostan/clubhouse-csv-upload/workflows/react-typescript-test/badge.svg)]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
