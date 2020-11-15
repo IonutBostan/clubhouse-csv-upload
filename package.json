@@ -2,6 +2,7 @@
   "name": "clubhouse-csv-upload",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://ionutbostan.github.io/clubhouse-csv-upload",
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
     "@testing-library/jest-dom": "^5.11.6",
