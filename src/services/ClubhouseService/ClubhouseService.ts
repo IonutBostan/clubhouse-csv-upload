@@ -8,12 +8,8 @@ export class ClubhouseService {
   private workflows: Workflow[];
   private members: Member[];
 
-  constructor() {
-    const { REACT_APP_CLUBHOUSE_API_TOKEN } = process.env;
-    if (!REACT_APP_CLUBHOUSE_API_TOKEN) {
-      throw new Error("The clubhouse api token was not found in .env file");
-    }
-    this.clubhouseToken = REACT_APP_CLUBHOUSE_API_TOKEN;
+  constructor(apiToken: string) {
+    this.clubhouseToken = apiToken;
     this.headers = {
       "Content-Type": "application/json",
       "Clubhouse-Token": this.clubhouseToken,

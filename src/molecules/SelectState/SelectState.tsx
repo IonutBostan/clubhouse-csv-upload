@@ -25,6 +25,7 @@ export const SelectState: React.FunctionComponent<{
   return (
     <SelectWithFilter
       {...{ onFocus, onChange }}
+      disabled={!projectId}
       dataSource={states}
       placeholder="Select a state"
     />
