@@ -29,7 +29,7 @@ export const SelectMember: React.FunctionComponent<{
         ...member,
         name: member.profile.name,
       }))}
-      placeholder="Select a project"
+      placeholder="Select a member"
     />
   );
 };
