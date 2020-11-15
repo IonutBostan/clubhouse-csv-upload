@@ -47,7 +47,8 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/setupTests.ts",
-      "!src/index.tsx"
+      "!src/index.tsx",
+      "!src/reportWebVitals.ts"
     ]
   },
   "devDependencies": {
