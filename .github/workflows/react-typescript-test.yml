@@ -1,0 +1,21 @@
+name: react-typescript-test
+
+on:
+  push:
+    branches:
+      - master
+      - feature/github-ci-workflow
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          yarn install
+      - run: |
+          yarn test
+
