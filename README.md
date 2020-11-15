@@ -1,4 +1,4 @@
-[![Clubhouse CSV Upload status](https://github.com/IonutBostan/clubhouse-csv-upload/workflows/react-typescript-test/badge.svg)]
+![Clubhouse CSV Upload status](https://github.com/IonutBostan/clubhouse-csv-upload/workflows/react-typescript-test/badge.svg)
 
 # Getting Started with Create React App
 
