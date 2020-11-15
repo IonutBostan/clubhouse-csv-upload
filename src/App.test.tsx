@@ -1,9 +1,15 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock("./pages", () => ({
+  StoriesUpload: () => "Stories Upload",
+}));
+
+describe("App application", () => {
+  it("renders the upload stories page", () => {
+    const { getByText } = render(<App />);
+    const uploadStoriesPage = getByText(/Stories Upload/i);
+    expect(uploadStoriesPage).toBeInTheDocument();
+  });
 });

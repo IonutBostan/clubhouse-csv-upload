@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "antd/dist/antd.css";
+import React from "react";
+import "./App.css";
+import { ClubhouseService, CSVService, FileService } from "./services";
+import { ServiceContext } from "store/ServiceContext/ServiceContext";
+import { StoriesUpload } from "./pages";
 
 function App() {
+  const services = {
+    clubhouseService: new ClubhouseService(),
+    fileService: new FileService(),
+    csvService: new CSVService(),
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ServiceContext.Provider value={services}>
+      <div className="App">
+        <StoriesUpload />
+      </div>
+    </ServiceContext.Provider>
   );
 }
 
