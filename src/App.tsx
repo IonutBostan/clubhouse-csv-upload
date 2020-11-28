@@ -25,6 +25,7 @@ function App() {
     clubhouseService: new ClubhouseService(clubhouseApiToken),
     fileService: new FileService(),
     csvService: new CSVService(),
+    setClubhouseApiToken,
   };
 
   return (

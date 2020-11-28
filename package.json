@@ -5,6 +5,8 @@
   "homepage": "http://ionutbostan.github.io/clubhouse-csv-upload",
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "^11.0.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
     "@testing-library/react-hooks": "^3.4.2",

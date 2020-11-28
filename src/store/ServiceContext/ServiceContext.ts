@@ -5,4 +5,5 @@ export const ServiceContext = React.createContext({
   clubhouseService: new ClubhouseService(""),
   fileService: new FileService(),
   csvService: new CSVService(),
+  setClubhouseApiToken: (token: string) => {},
 });
